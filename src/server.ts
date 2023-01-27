@@ -3,7 +3,7 @@ import cors from '@fastify/cors';
 import { appRoutes } from './routes';
 import dotenv from "dotenv";
 
-dotenv.config();
+dotenv.config()
 
 const PORT = process.env.PORT || 8080;
 
