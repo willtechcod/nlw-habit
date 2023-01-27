@@ -14,10 +14,9 @@ app.register(cors_1.default, {
     origin: true,
 });
 app.register(routes_1.appRoutes);
-/*app.listen({
+app.listen({
     port: 8080,
     host: '0.0.0.0',
 }).then((url) => {
     console.log(`HTTP Server running on ${url} 🚀`);
-});*/
-app.listen(PORT, () => console.log("HTTP Server running 🚀" + PORT));
+});
