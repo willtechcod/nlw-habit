@@ -4,7 +4,7 @@
   "description": "banco de dados de criação de hábitos.",
   "main": "index.js",
   "scripts": {
-    "start": "node build/index.js",
+    "start": "node api/index.js",
     "dev": "tsx watch src/index.ts",
     "build": "tsc",
     "postinstall": "prisma generate"
