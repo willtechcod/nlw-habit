@@ -1,8 +1,15 @@
 {
     "version": 2,
+    "public": true,
     "build": {
         "src": "public/build/server.js",
         "use": "@vercel/node",
         "buildCommand": "tsc"
-    }
+    },
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "public/build/routes.js"
+        }
+    ]
 }
