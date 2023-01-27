@@ -1,8 +1,8 @@
 {
   "name": "api-server",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "banco de dados de criação de hábitos.",
+  "main": "server.js",
   "scripts": {
     "start": "node public/build/server.js",
     "dev": "tsx watch src/server.ts",
