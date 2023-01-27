@@ -1,0 +1,34 @@
+{
+  "name": "api-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node public/build/server.js",
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "postinstall": "prisma generate"
+  },
+  "keywords": [],
+  "author": "William Pereira",
+  "license": "ISC",
+  "devDependencies": {
+    "@mermaid-js/mermaid-cli": "^9.3.0",
+    "@types/node": "^18.11.18",
+    "fastify": "^4.12.0",
+    "prisma": "^4.9.0",
+    "ts-node": "^10.9.1",
+    "tsx": "^3.12.2",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "@fastify/cors": "^8.2.0",
+    "@prisma/client": "^4.9.0",
+    "dayjs": "^1.11.7",
+    "dotenv": "^16.0.3",
+    "zod": "^3.20.2"
+  },
+  "prisma": {
+    "seed": "tsx prisma/seed.ts"
+  }
+}
