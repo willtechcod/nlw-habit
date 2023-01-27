@@ -6,14 +6,18 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const fastify_1 = __importDefault(require("fastify"));
 const cors_1 = __importDefault(require("@fastify/cors"));
 const routes_1 = require("./routes");
+const dotenv_1 = __importDefault(require("dotenv"));
+dotenv_1.default.config();
+const PORT = process.env.PORT || 8080;
 const app = (0, fastify_1.default)();
 app.register(cors_1.default, {
     origin: true,
 });
 app.register(routes_1.appRoutes);
-app.listen({
+/*app.listen({
     port: 8080,
     host: '0.0.0.0',
 }).then((url) => {
     console.log(`HTTP Server running on ${url} 🚀`);
-});
+});*/
+app.listen(PORT, () => console.log("HTTP Server running 🚀" + PORT));

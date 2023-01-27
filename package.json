@@ -2,7 +2,7 @@
   "name": "api-server",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "start": "node public/build/server.js",
     "dev": "tsx watch src/server.ts",
