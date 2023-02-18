@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node api/index.js",
     "dev": "tsx watch src/index.ts",
-    "build": "tsc",
+    "vercel-build": "npx prisma migrate deploy",
     "postinstall": "prisma generate"
   },
   "keywords": [],
